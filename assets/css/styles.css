@@ -8,6 +8,34 @@
   --muted:#6c7480;
   --ring:#dfe4ff;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg,#ffffff 0%, #fafbff 100%);
+  max-width: 100%;
+  overflow-x: hidden; /* FIX: stop horizontal scroll */
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem; /* FIX: mobile padding */
+}
+
+img {
+  max-width: 100%; /* FIX: images never overflow */
+  height: auto;
+  display: block;
+}
+
+.cards, .values, .events, .hero .grid {
+  max-width: 100%;
+  overflow-x: hidden; /* FIX: grids don’t break layout */
+}
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,Helvetica,sans-serif;color:var(--ink);background:linear-gradient(180deg,#ffffff 0%, #fafbff 100%);}
 a{color:var(--blue);text-decoration:none}
